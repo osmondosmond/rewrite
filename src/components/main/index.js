@@ -62,6 +62,9 @@ import css from './main.scss';
 // available as a string relative to [root]/dist/assets/img/
 import logo from './reactql-logo.svg';
 
+// Pages
+import { HotelPage } from '../../pages/HotelPage';
+
 // ----------------------
 
 // Example function to show that the `history` object can be changed from
@@ -94,6 +97,7 @@ export default () => (
     <hr />
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route path="/hotel" component={HotelPage} />
       <Route path="/page/:name" component={Page} />
       <Redirect from="/old/path" to="/new/path" />
       <Route component={WhenNotFound} />
